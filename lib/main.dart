@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:ui';
 
+import 'package:campus_connect/screens/homepage_view_screen.dart';
 import 'package:campus_connect/screens/main_calendar_screen.dart';
 import 'package:campus_connect/scripts/init.dart';
 import 'package:campus_connect/screens/splash_screen.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             // Wenn die Initialisierung abgeschlossen ist, zeige den Hauptbildschirm mit den Event-Daten
-            return EventCalenderViewScreen(
+            return HomepageViewScreen(
               eventData: eventData,
             );
           } else {

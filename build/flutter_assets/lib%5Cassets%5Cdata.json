@@ -218,13 +218,26 @@
         "icon": "star"
       }
     ],
-    "19": [],
+    "19": [  {
+      "title": "MatheCafe",
+      "date": "2024.03.19",
+      "time": "20:00",
+      "description": "Filmabend im CafeChaos, gezeigt wird der Herr der Ringe",
+      "icon": "star"
+    }],
     "20": [
       {
         "title": "Internationaler Glückstag",
         "date": "2024-03-20",
         "time": "00:00",
         "description": "Teile Freude und Glück!",
+        "icon": "smile"
+      },
+      {
+        "title": "Vortrag AI",
+        "date": "2024-03-20",
+        "time": "13:00",
+        "description": "Vortrag im Fachbereich AI",
         "icon": "smile"
       }
     ],
