@@ -123,6 +123,7 @@ class _EventCalenderViewScreenState extends State<EventCalenderViewScreen> {
 
       //BottomNavigationBar//
       bottomNavigationBar: BottomNavBar(
+        pageIndex: 1,
         context: context,
         eventData: eventData,
       ),

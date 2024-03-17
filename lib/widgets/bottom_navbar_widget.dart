@@ -11,8 +11,12 @@ DateTime currentDate = DateTime.now();
 class BottomNavBar extends StatelessWidget {
   final BuildContext context;
   final Map<String, dynamic> eventData;
+  final int pageIndex;
   // Konstruktor, der den Build-Kontext erwartet
-  BottomNavBar({required this.context, required this.eventData});
+  BottomNavBar(
+      {required this.context,
+      required this.eventData,
+      required this.pageIndex});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +44,9 @@ class BottomNavBar extends StatelessWidget {
               },
               icon: Icon(
                 Icons.article,
-                color: Color.fromARGB(255, 26, 39, 55), // Artikel-Icon-Farbe
+                color: pageIndex == 2
+                    ? _secondaryColor
+                    : Color.fromARGB(255, 26, 39, 55), // Artikel-Icon-Farbe
               ),
             ),
             label: '', // Kein Text für das Artikel-Icon
@@ -57,8 +63,10 @@ class BottomNavBar extends StatelessWidget {
               },
               icon: Icon(
                 Icons.event,
-                color:
-                    _secondaryColor, // Sekundärfarbe für das Veranstaltungs-Icon
+                color: pageIndex == 1
+                    ? _secondaryColor
+                    : Color.fromARGB(255, 26, 39,
+                        55), // Sekundärfarbe für das Veranstaltungs-Icon
               ),
             ),
             label: '', // Kein Text für das Veranstaltungs-Icon
@@ -76,7 +84,9 @@ class BottomNavBar extends StatelessWidget {
               },
               icon: Icon(
                 Icons.map,
-                color: Color.fromARGB(255, 26, 39, 55), // Karten-Icon-Farbe
+                color: pageIndex == 3
+                    ? _secondaryColor
+                    : Color.fromARGB(255, 26, 39, 55), // Karten-Icon-Farbe
               ),
             ),
             label: '', // Kein Text für das Karten-Icon

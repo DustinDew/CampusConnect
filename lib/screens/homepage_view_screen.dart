@@ -10,6 +10,7 @@ class HomepageViewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavBar(
+        pageIndex: 2,
         context: context,
         eventData: eventData,
       ),

@@ -9,6 +9,7 @@ class CampusMapViewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavBar(
+        pageIndex: 3,
         context: context,
         eventData: eventData,
       ),

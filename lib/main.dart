@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:ui';
 
 import 'package:campus_connect/screens/homepage_view_screen.dart';
-import 'package:campus_connect/screens/main_calendar_screen.dart';
 import 'package:campus_connect/scripts/init.dart';
 import 'package:campus_connect/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +35,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'CampusConnect', // Titel der Anwendung
       // Startseite der Anwendung mit FutureBuilder
       home: FutureBuilder(
